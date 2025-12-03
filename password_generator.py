@@ -14,7 +14,15 @@ numbrers = ['0', '1', '2' ,'3' ,'4' ,'5' ,'6' ,'7' ,'8' ,'9']
 special_chars = ['!', '"', '#', '$', '%', '&', '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', ']', '_', '{', '|', '}']
 
 def clear():
-    os.system('clear')
+    command = None
+    
+    if os.name == 'nt': # Windows
+       
+        command = 'cls'
+    else: # Linux, Mac OS, Unix
+        command = 'clear'
+        
+    os.system(command)
 
 def welcome():
     while True:
@@ -32,7 +40,7 @@ def welcome():
                     print("Input only natural numbers...\n")
                 elif length == 0:
                     clear()
-                    print("Password must have length...\n")
+                    print("\n")
                 else:
                     clear()
                     break
