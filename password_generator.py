@@ -1,6 +1,6 @@
 # ==============================================
 #  Program: Password Generator
-#  Author: Kulhy | alias: Adam Kaiser
+#  Author: Luboš Kulhan | alias: Adam Kaiser
 #  Description: Program for generating passwords
 # ==============================================
 
