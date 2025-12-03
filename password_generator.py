@@ -40,7 +40,8 @@ def welcome():
                     print("Input only natural numbers...\n")
                 elif length == 0:
                     clear()
-                    print("\n")
+                    print("Good bye\n")
+                    exit()
                 else:
                     clear()
                     break
